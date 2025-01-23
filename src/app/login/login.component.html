@@ -7,16 +7,16 @@ style="padding: 5px; font-size: 16px;"
 <br>
 <br>
 <input
-type="text"
+type="password"
 placeholder="contraseña"
 #inputPass
 style="padding: 5px; font-size: 16px;"/>
 <br>
+<div *ngIf="session"><br>Datos incorrectos, intente nuevamente</div>
 <br>
 <button
 (click)="updateInput(inputUser.value, inputPass.value)"
 style="padding: 5px 10px; font-size: 16px;"
-routerLink='/home'
 >
 Ingresar
 </button>
